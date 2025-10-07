@@ -1,0 +1,24 @@
+.post-list {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.post-card {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+}
+
+.post-card:last-child {
+  border-bottom: none;
+}
+
+.emotion {
+  font-style: italic;
+  color: #ff6b81;
+}
+
+.content {
+  margin-top: 8px;
+}
