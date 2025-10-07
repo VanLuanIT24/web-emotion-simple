@@ -8,13 +8,17 @@ export default function PostForm({ onAddPost }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!title || !emotion || !content) return alert("Hãy điền đủ thông tin nhé 💖");
+    if (!title || !emotion || !content)
+      return alert("Hãy điền đủ thông tin nhé 💖");
+
     const newPost = {
       id: Date.now(),
       title,
       emotion,
       content,
+      date: new Date().toISOString(),
     };
+
     onAddPost(newPost);
     setTitle("");
     setEmotion("");
